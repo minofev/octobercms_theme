@@ -1,0 +1,40 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Полигон "Непецино" | {{ this.page.title }}</title>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        {% if this.page.id == 'shooting_range' %}
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" href="{{ 'assets/css/shooting_range.css'|theme }}" media="(max-width: 539px)">
+            <link rel="stylesheet" href="{{ 'assets/css/tablet_shooting_range.css'|theme }}" media="(min-width: 540px) and (max-width: 720px)">
+            <link rel="stylesheet" href="{{ 'assets/css/desk_shooting_range.css'|theme }}" media="(min-width: 721px)">
+        {% else %}
+        	<link rel="stylesheet" href="{{ 'assets/css/home.css'|theme }}" media="(max-width: 699px)">
+        	<link rel="stylesheet" href="{{ 'assets/css/desk_home.css'|theme }}" media="(min-width: 700px)">
+        {% endif %}
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header id="layout-header">
+            {% partial 'site/header' %}
+        </header>
+
+        <!-- Content -->
+        <section id="layout-content">
+            {% page %}
+        </section>
+
+        <!-- Footer -->
+        <footer id="layout-footer">
+            {% partial 'site/footer' %}
+        </footer>
+
+    </body>
+</html>

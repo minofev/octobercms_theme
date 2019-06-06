@@ -1,0 +1,108 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #000;
+}
+header{
+	color: #fff;
+	width: 100%;
+	min-height: 100vh;
+	background: #000;
+
+}
+header .poster{
+	display: none;
+}
+
+header .logotype{
+	width: 100px;
+	height: 100px;
+}
+header .logotype img{
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+}
+header .menu a:hover{
+	text-decoration: none;
+}
+header .menu{
+	margin-left: -40px;
+	background: #000;
+	font-weight: 600;
+	text-align: center;
+	font-size: 24px;
+}
+header .menu ul{
+	list-style: none;
+}
+header .menu a{
+	color: #fff;
+
+}
+header .menu li{
+	padding: 5px;
+	border-bottom: 2px solid #fff;
+}
+header .others{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 15px;
+}
+main{
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 10px 15px;
+}
+main .container{
+	width: 100%;
+	height: 100%;
+	padding: 10px 15px;
+}
+main .container .coord{
+	font-size: 10px;
+}
+
+main .description p{
+	font-size: 12px;
+}
+main .about{
+	text-align: left;
+	margin-top: 20px;
+}
+main h1{
+	margin-top: 20px;
+}
+
+main .about h1{
+	text-align: center;
+}
+main .about ul{
+	list-style: none;
+}
+main .about .ask{
+	color: grey;
+}
+main .about .answer{
+	color: #fff;
+}
+main .games .game_block{
+	width: 100%;
+	height: 230px;
+	background: url(../images/games_bg.png) center;
+	padding: 70px 0;
+	margin-top: 15px;
+}
+.game_block .date{
+	font-size: 28px;
+}
+.game_block .type{
+	font-size: 24px;
+}
+.game_block .more{
+	font-size: 20px;
+}
+.game_block .more a{
+	color: #fff;
+}
