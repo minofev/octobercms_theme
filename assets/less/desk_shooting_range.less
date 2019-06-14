@@ -1,0 +1,168 @@
+/*=============== IMPORTS ===============*/
+@import "variables.less";
+@import "fonts.less";
+
+/*=============== STYLES ===============*/
+body{
+	font-family: 'OpenSans_semibold';
+	margin: 0;
+	padding: 0;
+	background: #000;
+	color: #fff;
+}
+header{
+	margin: 0;
+	background: url(../images/header-bg-2.png) top no-repeat;
+	background-size: 100%;
+	min-height: 360px;
+
+	.logotype { display: none; }
+
+	.contacts{
+		text-align: right;
+		margin-right: 50px;
+
+		address{
+			display: inline-block;
+			margin-top: 20px;
+			color: #000;
+			font-size: 20pt;
+			margin-right: 90px;
+			margin-bottom: 2.5%;
+		}
+	}
+
+	.poster { display: none; }
+
+	.menu{
+		padding: 0;
+		width: 100%;
+		margin-left: 15%;
+		margin-top: 10px;
+
+		ul{
+			list-style: none;
+			width: 100%;
+		}
+
+		li
+		{
+			display: inline-block;
+
+			&:last-child { margin: 0; }
+		}
+
+		a{
+			color: #000;
+			text-decoration: none;
+			font-size: 18pt;
+			margin-right: 47px;
+		}
+	}
+}
+
+main {
+	.content{
+		padding-top: 5%;
+		width: 92%;
+		margin: 0 auto;
+
+		h1{
+			text-align: left;
+			font-size: 38pt;
+		}
+
+		.map{
+			text-align: center;
+
+			h1{
+				text-align: center;
+				margin-top: -8%;
+				margin-bottom: 30px;
+			}
+		}
+
+		.games_text{
+			margin-top: 70px;
+			margin-bottom: 20px;
+		}
+
+		.desc_about{
+			margin-top: 70px;
+		}
+
+		.description{
+			p{
+				text-align: justify;
+			}
+
+			h1{
+				text-align: left;
+			}
+		}
+
+		.about{
+			h1{
+				text-align: left;
+				margin-left: 35px;
+			}
+		}
+
+		.coord{
+			text-align: center;
+		}
+
+		ul{
+			list-style: none;
+		}
+
+		.ask{
+			color: grey;
+		}
+
+		.answer{
+			color: #fff;
+		}
+
+		.games{
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 300px;
+			width: 100%;
+			font-family: 'OpenSans';
+
+			.game_block{
+				background: url(../images/games_bg.png) top;
+				background-size: 100%;
+				width: 562px;
+				height: 374px;
+				margin-right: 80px;
+				text-align: center;
+				border: 1px solid #fff;
+
+				.date{
+					margin-top: 120px;
+					font-size: 32pt;
+				}
+
+				.type{
+					font-size: 24pt;
+					margin-top: -10px;
+					font-family: 'OpenSans_semibold';
+				}
+
+				.more{
+					a{
+						color: #fff;
+						margin-top: 0;
+						font-size: 18pt;
+						font-family: 'OpenSans_semibold';
+					}
+				}
+			}
+		}
+	}
+}
+#last_block{
+	margin: 0;
+}

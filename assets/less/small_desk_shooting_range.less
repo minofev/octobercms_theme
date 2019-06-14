@@ -1,0 +1,181 @@
+/*=============== IMPORTS ===============*/
+@import "variables.less";
+@import "fonts.less";
+
+/*=============== STYLES ===============*/
+body{
+	font-family: 'OpenSans_semibold';
+	margin: 0;
+	padding: 0;
+	background: #000;
+	color: #fff;
+}
+header{
+	margin: 0;
+	background: url(../images/header-bg-2.png) top no-repeat;
+	background-size: 100%;
+	min-height: 360px;
+	margin-bottom: -120px;
+
+	.logotype { display: none; }
+
+	.contacts{
+		text-align: right;
+		margin-right: 40px;
+
+		address{
+			display: inline-block;
+			margin-top: 20px;
+			color: #000;
+			font-size: 14pt;
+			margin-right: 70px;
+			margin-bottom: 2.5%;
+		}
+	}
+
+	.poster { display: none; }
+
+	.menu{
+		padding: 0;
+		width: 100%;
+		margin-left: 15%;
+		margin-top: 1px;
+
+		ul{
+			list-style: none;
+			width: 100%;
+		}
+
+		li{
+			display: inline-block;
+
+			&:last-child{
+				margin: 0;
+			}
+		}
+
+		a{
+			color: #000;
+			text-decoration: none;
+			font-size: 12pt;
+			margin-right: 25px;
+		}
+	}
+}
+main{
+	.content{
+		padding-top: 5%;
+		width: 92%;
+		margin: 0 auto;
+	}
+
+	.map{
+		text-align: center;
+
+		h1{
+			font-size: 38pt;
+			text-align: center;
+			margin-top: -8%;
+			margin-bottom: 30px;
+		}
+	}
+
+	.about{
+		h1{
+			font-size: 16pt;
+		}
+	}
+
+	.desc_about{
+		h1 { font-size: 16pt; }
+	}
+
+	.games_text{
+		margin-top: 70px;
+		margin-bottom: 20px;
+	}
+
+	h1 { font-size: 22pt; }
+
+	.desc_about { margin-top: 70px; }
+
+	.content{
+		.description{
+			p{
+				text-align: justify;
+				font-family: 'OpenSans_light';
+			}
+
+			h1 { text-align: left; }
+		}
+
+		.about{
+			h1{
+				text-align: left;
+				margin-left: 35px;
+			}
+		}
+
+		.coord { text-align: center; }
+
+		ul { list-style: none; }
+
+		.ask{
+			color: grey;
+			font-family: 'OpenSans_light';
+		}
+
+		.answer{
+			color: #fff;
+			font-family: 'OpenSans_light';
+		}
+	}
+
+	.games{
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 300px;
+		width: 100%;
+		font-family: 'OpenSans';
+
+		.game_block{
+			background: url(../images/games_bg.png) top;
+			background-size: 100%;
+			width: 562px;
+			height: 250px;
+			margin-right: 80px;
+			text-align: center;
+			border: 1px solid #fff;
+
+			.date{
+				margin-top: 80px;
+				font-size: 28pt;
+			}
+
+			.type{
+				font-size: 20pt;
+				margin-top: -10px;
+				font-family: 'OpenSans_semibold';
+			}
+
+			.type{
+				font-size: 20pt;
+				margin-top: -10px;
+				font-family: 'OpenSans_semibold';
+			}
+
+			.more{
+				a{
+					color: #fff;
+					margin-top: 0;
+					font-size: 14pt;
+					font-family: 'OpenSans_semibold';
+				}
+			}
+		}
+	}
+}
+
+#last_block{
+	margin: 0;
+}

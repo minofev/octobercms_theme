@@ -1,0 +1,170 @@
+/*=============== IMPORTS ===============*/
+@import "variables.less";
+@import "fonts.less";
+
+/*=============== STYLES ===============*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	background: @color_black;
+	padding-bottom: 400px;
+	font-family: 'OpenSans_semibold';
+}
+header{
+	background: url(../images/bg.png) top;
+	background-size: 100%;
+	padding: 90px 100px;
+	min-height: 100vh;
+	box-shadow: 0px -46px 22px -19px @color_black inset;
+	
+
+	.header_content{
+		display: flex;
+		justify-content: space-between;
+
+		.others{
+			height: 100%;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			.logotype{ img { width: 20%; }}
+
+			.contacts{
+				font-size: 12pt;
+				font-style: normal;
+			}
+		}
+	}
+
+	.menu{
+		width: 20%;
+
+		ul{
+			list-style: none;
+			margin-top: 0;
+			text-align: right;
+		}
+
+		li{
+			margin-bottom: 10px;
+		}
+
+		a{
+			color: @color_black;
+			text-decoration: none;
+			font-size: 10.8pt;
+		}
+	}
+	.poster{
+		background: url(../images/1.png) no-repeat;
+		background-size: 100%;
+		
+		margin: 100px auto;
+		color: @color_white;
+		padding-top: 20px;
+		margin-bottom: 40px;
+		height: 500px;
+		width: 960px;
+
+		span { display: block; }
+
+		p { margin: 0; }
+
+		.links{
+			margin-left: 45%;
+			margin-top: 3%;
+
+			a{
+				color: @color_white;
+				display: block;
+				text-decoration: none;
+				font-size: 14pt;
+			}
+		}
+
+		.poster_name{
+			font-size: 40pt;
+			font-family: 'OpenSans_bold';
+			margin-left: 100px;
+		}
+
+		.poster_date{
+			font-size: 64pt;
+			font-family: 'OpenSans_bold';
+			text-align: right;
+			margin: 0;
+			margin-right: 120px;
+		}
+
+		.poster_address{
+			font-size: 32pt;
+			font-family: 'OpenSans_bold';
+			text-align: right;
+			margin: 0;
+			margin-right: 90px;
+			margin-top: -15px;
+		}
+	}
+}
+
+/* =============== BODY ======================*/
+
+main{
+	color: @color_white;
+	text-align: center;
+	padding-top: 50px;
+
+	.about_airsoft{
+		width: 46%;
+		margin: 0 auto;
+
+		h1{
+			font-size: 39pt;
+		}
+
+		p{
+			font-size: 13pt;
+			font-family: 'OpenSans';
+		}
+	}
+
+	.gallery{
+		margin-top: 150px;
+		width: 100%;
+		height: 350px;
+		background: #292929;
+		padding-top: 190px;
+
+		p{
+			font-size: 32px;
+		}
+	}
+
+	button{
+		margin-top: 185px;
+		height: 150px;
+		width: 600px;
+		font-weight: 600;
+		font-size: 48px;
+		padding-left: 50px 70px;
+		background: @color_button_home;
+		border: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

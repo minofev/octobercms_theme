@@ -1,0 +1,128 @@
+/*=============== IMPORTS ===============*/
+@import "variables.less";
+@import "fonts.less";
+
+/*=============== STYLES ===============*/
+body{
+	font-family: 'OpenSans_semibold';
+	margin: 0;
+	padding: 0;
+	background: #000;
+}
+header{
+	color: #fff;
+	width: 100%;
+	min-height: 100vh;
+	background: #000;
+
+	.poster { display: none; }
+
+	.logotype{
+		width: 100px;
+		height: 100px;
+
+		img{
+			width: 80px;
+			height: 80px;
+			display: inline-block;
+		}
+	}
+
+	.menu{
+		margin-left: -40px;
+		background: #000;
+		font-weight: 600;
+		text-align: center;
+		font-size: 24px;
+
+		ul { list-style: none; }
+
+		a{
+			color: #fff;
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
+		li{
+			padding: 5px;
+			border-bottom: 2px solid #fff;
+			width: 100%;
+		}
+	}
+
+	.header_content { width: 100%; }
+
+	.others{
+		display: flex;
+		justify-content: space-between;
+		margin: 10px 15px;
+	}
+}
+
+main{
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 10px 15px;
+
+	h1 { margin-top: 20px; }
+
+	.content{
+		width: 102.5%;
+	}
+
+	.description{
+		p{
+			font-size: 12px;
+			font-family: 'OpenSans_light';
+		}
+	}
+
+	.about{
+		text-align: left;
+		margin-top: 20px;
+
+		h1 { text-align: center; }
+
+		ul { list-style: none; }
+
+		.ask{
+			color: grey;
+			font-family: 'OpenSans_light';
+		}
+
+		.answer{
+			color: #fff;
+			font-family: 'OpenSans_light';
+		}
+	}
+
+	.games{
+		.game_block{
+			width: 60%;
+			height: 230px;
+			background: url(../images/games_bg.png) center;
+			padding: 70px 0;
+			margin: 0 auto;
+			margin-top: 15px;
+			font-family: 'OpenSans';
+
+			.date { font-size: 28px; }
+
+			.type{
+				font-size: 24px;
+				font-family: 'OpenSans_semibold';
+			}
+
+			.more{
+				a{
+					color: #fff;
+					font-size: 20px;
+					font-family: 'OpenSans_semibold';
+				}
+			}
+		}
+	}
+}

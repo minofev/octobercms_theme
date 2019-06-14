@@ -1,0 +1,21 @@
+title = "Главная"
+url = "/"
+layout = "default"
+is_hidden = 0
+==
+{% put styles %}
+    <link rel="stylesheet" href="{{ ['assets/less/home.less']|theme }}" media="(max-width: 699px)">
+    <link rel="stylesheet" href="{{ ['assets/less/tablet_home.less']|theme }}" media="(max-width: 999px)">
+    <link rel="stylesheet" href="{{ ['assets/less/small_desk_home.less']|theme }}" media="(min-width: 1000px)">
+    <link rel="stylesheet" href="{{ ['assets/less/desk_home.less']|theme }}" media="(min-width: 1800px)">
+{% endput %}
+<main>
+	<div class="about_airsoft">
+		<h1>Что такое страйкбол?</h1>
+		<p>Страйкбол - это военно-спортивная игра, участники которой используют для стрельбы электро-пневматические реалистичные копии боевого стрелкового оружия, изготовленного из металла или пластика. Стрельба ведется пластиковыми шарами диаметром 6 или 8 мм весом от 0,12 до 0,43 грамма.</p>
+	</div>
+	<div class="gallery">
+		<p>галерея фотографий - подтягивается автоматически плиткой 5 х 3, занимает всю ширину</p>
+	</div>
+	<button>Записаться на игру</button>
+</main>
